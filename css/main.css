@@ -1,14 +1,58 @@
-.backgroud_main_body{
-  background: #598bcd;
+*{
+  margin: 0;
+  padding: 0;
 }
 
+.backgroud_main_body{
+  width: 422px;
+  height: 625px;
+  background: #598bcd;
+  /*background-size: cover;*/
+}
+#btn_friend{
+position: absolute;
+top: 528px;
+left: 24px;
+}
+
+#btn_shop{
+  position: absolute;
+  top: 528px;
+  left: 220px;
+}
 .button_1{
   border-radius: 15px;
   width: 178px;
   height: 83px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: rgba(51, 168, 200, 0.44);
+  border: 0;
+  text-align: right;
+  font-size: 20px;
 }
+.button_1:hover{
+  cursor: pointer;
+}
+
+
+
+.button_2{
+  border-radius: 15px;
+  width: 178px;
+  height: 83px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(51, 168, 200, 0.44);
+  border: 0;
+  text-align: right;
+  font-size: 20px;
+  /*margin: 528px 220px 0px 0px;*/
+  margin-top: -528px;
+  margin-left: 220px;
+}
+.button_1:hover{
+  cursor: pointer;
+}
+
 .click_obj{
   border: 1px solid rgba(40, 43, 37, 0.52);
   border-radius: 999px;
@@ -16,4 +60,10 @@
   height: 317px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: url("path_to_image");
+}
+.click_obj:hover{
+  cursor: pointer;
+}
+.click_obj.shrink {
+  transform: scale(0.5); /* Зменшення розміру в 2 рази */
 }
