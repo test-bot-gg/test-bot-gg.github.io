@@ -1,58 +1,45 @@
-*{
+.backgroud_main_body{
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #598bcd; /* Тло синього кольору */
+  font-family: Arial, sans-serif;
+}
+.container {
+    text-align: center;
 }
 
-.backgroud_main_body{
-  width: 422px;
-  height: 625px;
-  background: #598bcd;
-  /*background-size: cover;*/
-  float: left;
-}
-#btn_friend{
-position: absolute;
-top: 528px;
-left: 24px;
-}
-
-#btn_shop{
-  position: absolute;
-  top: 528px;
-  left: 220px;
-}
-.button_1{
-  border-radius: 15px;
-  width: 178px;
-  height: 83px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background: rgba(51, 168, 200, 0.44);
-  border: 0;
-  text-align: right;
-  font-size: 20px;
-}
-.button_1:hover{
-  cursor: pointer;
+.button_menu {
+    display: flex;
+    flex-direction: center
+    gap: 20px;
 }
 
 
+.button_1 {
+    border-radius: 15px;
+    width: 40vw; /* Ширина кнопки 15% від ширини вікна */
+    height: 8vh;  /* Висота кнопки 8% від висоти вікна */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background: rgba(51, 168, 200, 0.44);
+    border: none;
+    text-align: center;
+    font-size: 1.5vw; /* Розмір тексту пропорційний ширині вікна */
+    color: #000;
+    transition: transform 0.3s, background-color 0.3s;
+}
 
-.button_2{
-  border-radius: 15px;
-  width: 178px;
-  height: 83px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background: rgba(51, 168, 200, 0.44);
-  border: 0;
-  text-align: right;
-  font-size: 20px;
-  /*margin: 528px 220px 0px 0px;*/
-  margin-top: -528px;
-  margin-left: 220px;
+.button_1:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Невелике збільшення при наведенні */
+    background-color: rgba(51, 168, 200, 0.7);
 }
-.button_1:hover{
-  cursor: pointer;
-}
+
+
 
 .click_obj{
   border: 1px solid rgba(40, 43, 37, 0.52);
@@ -60,8 +47,7 @@ left: 24px;
   width: 317px;
   height: 317px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background: url("path_to_image");
-    float: left;
+  text-align: center;
 }
 .click_obj:hover{
   cursor: pointer;
